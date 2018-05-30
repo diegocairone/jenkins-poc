@@ -18,6 +18,6 @@ public class CalculadoraTest {
 	public void test2() {
 		Calculadora calc = new Calculadora();
 		int r = calc.sumar(1, -1);
-		assertThat(10, CoreMatchers.is(r));
+		assertThat(0, CoreMatchers.is(r));
 	}
 }
