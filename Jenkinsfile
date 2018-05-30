@@ -15,6 +15,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'mvn -f jenkins1/pom.xml test'
+        junit 'jenkins1/target/surefire-reports/*.xml'
       }
     }
   }
