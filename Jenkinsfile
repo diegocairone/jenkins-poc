@@ -12,5 +12,10 @@ pipeline {
         sh 'mvn -f jenkins1/pom.xml -B -DskipTests clean package'
       }
     }
+    stage('Test') {
+      steps {
+        sh 'mvn -f jenkins1/pom.xml test'
+      }
+    }
   }
 }
