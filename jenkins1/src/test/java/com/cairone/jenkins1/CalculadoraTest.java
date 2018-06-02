@@ -11,13 +11,13 @@ public class CalculadoraTest {
 	public void test1() {
 		Calculadora calc = new Calculadora();
 		int r = calc.sumar(1, 1);
-		assertThat(2, CoreMatchers.is(r));
+		assertThat(r, CoreMatchers.is(2));
 	}
 	
 	@Test
 	public void test2() {
 		Calculadora calc = new Calculadora();
 		int r = calc.sumar(1, -1);
-		assertThat(10, CoreMatchers.is(r));
+		assertThat(r, CoreMatchers.is(0));
 	}
 }
