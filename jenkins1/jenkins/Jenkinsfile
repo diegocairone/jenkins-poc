@@ -10,7 +10,7 @@ node {
 				sh 'mvn -f jenkins1/pom.xml test'
 			}
 			finally {
-				junit '**/jenkins1/target/*.xml'
+				junit 'jenkins1/target/*.xml'
 			}
 		}
 	}
